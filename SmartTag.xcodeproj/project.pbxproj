@@ -1,0 +1,326 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FF71BE471E95B5B200220EDE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF71BE461E95B5B200220EDE /* AppDelegate.swift */; };
+		FF71BE491E95B5B200220EDE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF71BE481E95B5B200220EDE /* ViewController.swift */; };
+		FF71BE4C1E95B5B200220EDE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF71BE4A1E95B5B200220EDE /* Main.storyboard */; };
+		FF71BE4F1E95B5B200220EDE /* SmartTag.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FF71BE4D1E95B5B200220EDE /* SmartTag.xcdatamodeld */; };
+		FF71BE511E95B5B200220EDE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF71BE501E95B5B200220EDE /* Assets.xcassets */; };
+		FF71BE541E95B5B200220EDE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF71BE521E95B5B200220EDE /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		FF71BE431E95B5B200220EDE /* SmartTag.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartTag.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF71BE461E95B5B200220EDE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FF71BE481E95B5B200220EDE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FF71BE4B1E95B5B200220EDE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FF71BE4E1E95B5B200220EDE /* SmartTag.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SmartTag.xcdatamodel; sourceTree = "<group>"; };
+		FF71BE501E95B5B200220EDE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FF71BE531E95B5B200220EDE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FF71BE551E95B5B200220EDE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FF71BE401E95B5B200220EDE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FF71BE3A1E95B5B200220EDE = {
+			isa = PBXGroup;
+			children = (
+				FF71BE451E95B5B200220EDE /* SmartTag */,
+				FF71BE441E95B5B200220EDE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FF71BE441E95B5B200220EDE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FF71BE431E95B5B200220EDE /* SmartTag.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FF71BE451E95B5B200220EDE /* SmartTag */ = {
+			isa = PBXGroup;
+			children = (
+				FF71BE461E95B5B200220EDE /* AppDelegate.swift */,
+				FF71BE481E95B5B200220EDE /* ViewController.swift */,
+				FF71BE4A1E95B5B200220EDE /* Main.storyboard */,
+				FF71BE501E95B5B200220EDE /* Assets.xcassets */,
+				FF71BE521E95B5B200220EDE /* LaunchScreen.storyboard */,
+				FF71BE551E95B5B200220EDE /* Info.plist */,
+				FF71BE4D1E95B5B200220EDE /* SmartTag.xcdatamodeld */,
+			);
+			path = SmartTag;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FF71BE421E95B5B200220EDE /* SmartTag */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF71BE581E95B5B200220EDE /* Build configuration list for PBXNativeTarget "SmartTag" */;
+			buildPhases = (
+				FF71BE3F1E95B5B200220EDE /* Sources */,
+				FF71BE401E95B5B200220EDE /* Frameworks */,
+				FF71BE411E95B5B200220EDE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SmartTag;
+			productName = SmartTag;
+			productReference = FF71BE431E95B5B200220EDE /* SmartTag.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FF71BE3B1E95B5B200220EDE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Trương Thắng";
+				TargetAttributes = {
+					FF71BE421E95B5B200220EDE = {
+						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = 56AJJ634ZU;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = FF71BE3E1E95B5B200220EDE /* Build configuration list for PBXProject "SmartTag" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FF71BE3A1E95B5B200220EDE;
+			productRefGroup = FF71BE441E95B5B200220EDE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FF71BE421E95B5B200220EDE /* SmartTag */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FF71BE411E95B5B200220EDE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF71BE541E95B5B200220EDE /* LaunchScreen.storyboard in Resources */,
+				FF71BE511E95B5B200220EDE /* Assets.xcassets in Resources */,
+				FF71BE4C1E95B5B200220EDE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FF71BE3F1E95B5B200220EDE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF71BE491E95B5B200220EDE /* ViewController.swift in Sources */,
+				FF71BE471E95B5B200220EDE /* AppDelegate.swift in Sources */,
+				FF71BE4F1E95B5B200220EDE /* SmartTag.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FF71BE4A1E95B5B200220EDE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FF71BE4B1E95B5B200220EDE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FF71BE521E95B5B200220EDE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FF71BE531E95B5B200220EDE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FF71BE561E95B5B200220EDE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FF71BE571E95B5B200220EDE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FF71BE591E95B5B200220EDE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 56AJJ634ZU;
+				INFOPLIST_FILE = SmartTag/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.Big0.SmartTag;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		FF71BE5A1E95B5B200220EDE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 56AJJ634ZU;
+				INFOPLIST_FILE = SmartTag/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.Big0.SmartTag;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FF71BE3E1E95B5B200220EDE /* Build configuration list for PBXProject "SmartTag" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF71BE561E95B5B200220EDE /* Debug */,
+				FF71BE571E95B5B200220EDE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF71BE581E95B5B200220EDE /* Build configuration list for PBXNativeTarget "SmartTag" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF71BE591E95B5B200220EDE /* Debug */,
+				FF71BE5A1E95B5B200220EDE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		FF71BE4D1E95B5B200220EDE /* SmartTag.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				FF71BE4E1E95B5B200220EDE /* SmartTag.xcdatamodel */,
+			);
+			currentVersion = FF71BE4E1E95B5B200220EDE /* SmartTag.xcdatamodel */;
+			path = SmartTag.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = FF71BE3B1E95B5B200220EDE /* Project object */;
+}
