@@ -8,22 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		FF71BE471E95B5B200220EDE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF71BE461E95B5B200220EDE /* AppDelegate.swift */; };
-		FF71BE491E95B5B200220EDE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF71BE481E95B5B200220EDE /* ViewController.swift */; };
 		FF71BE4C1E95B5B200220EDE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF71BE4A1E95B5B200220EDE /* Main.storyboard */; };
 		FF71BE4F1E95B5B200220EDE /* SmartTag.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FF71BE4D1E95B5B200220EDE /* SmartTag.xcdatamodeld */; };
 		FF71BE511E95B5B200220EDE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF71BE501E95B5B200220EDE /* Assets.xcassets */; };
 		FF71BE541E95B5B200220EDE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF71BE521E95B5B200220EDE /* LaunchScreen.storyboard */; };
+		FF71BE5D1E95BD4600220EDE /* TweetTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF71BE5C1E95BD4600220EDE /* TweetTableViewController.swift */; };
+		FF71BE5F1E95BDF000220EDE /* Tweet.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF71BE5E1E95BDF000220EDE /* Tweet.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		FF71BE431E95B5B200220EDE /* SmartTag.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartTag.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF71BE461E95B5B200220EDE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FF71BE481E95B5B200220EDE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FF71BE4B1E95B5B200220EDE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FF71BE4E1E95B5B200220EDE /* SmartTag.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SmartTag.xcdatamodel; sourceTree = "<group>"; };
 		FF71BE501E95B5B200220EDE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FF71BE531E95B5B200220EDE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FF71BE551E95B5B200220EDE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF71BE5C1E95BD4600220EDE /* TweetTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TweetTableViewController.swift; sourceTree = "<group>"; };
+		FF71BE5E1E95BDF000220EDE /* Tweet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tweet.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +58,24 @@
 		FF71BE451E95B5B200220EDE /* SmartTag */ = {
 			isa = PBXGroup;
 			children = (
-				FF71BE461E95B5B200220EDE /* AppDelegate.swift */,
-				FF71BE481E95B5B200220EDE /* ViewController.swift */,
 				FF71BE4A1E95B5B200220EDE /* Main.storyboard */,
+				FF71BE5C1E95BD4600220EDE /* TweetTableViewController.swift */,
+				FF71BE5E1E95BDF000220EDE /* Tweet.swift */,
+				FF71BE5B1E95BCF900220EDE /* Supporting File */,
+			);
+			path = SmartTag;
+			sourceTree = "<group>";
+		};
+		FF71BE5B1E95BCF900220EDE /* Supporting File */ = {
+			isa = PBXGroup;
+			children = (
+				FF71BE461E95B5B200220EDE /* AppDelegate.swift */,
 				FF71BE501E95B5B200220EDE /* Assets.xcassets */,
 				FF71BE521E95B5B200220EDE /* LaunchScreen.storyboard */,
 				FF71BE551E95B5B200220EDE /* Info.plist */,
 				FF71BE4D1E95B5B200220EDE /* SmartTag.xcdatamodeld */,
 			);
-			path = SmartTag;
+			name = "Supporting File";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,9 +151,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FF71BE491E95B5B200220EDE /* ViewController.swift in Sources */,
+				FF71BE5D1E95BD4600220EDE /* TweetTableViewController.swift in Sources */,
 				FF71BE471E95B5B200220EDE /* AppDelegate.swift in Sources */,
 				FF71BE4F1E95B5B200220EDE /* SmartTag.xcdatamodeld in Sources */,
+				FF71BE5F1E95BDF000220EDE /* Tweet.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
