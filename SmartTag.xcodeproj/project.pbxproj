@@ -13,8 +13,23 @@
 		FF71BE511E95B5B200220EDE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF71BE501E95B5B200220EDE /* Assets.xcassets */; };
 		FF71BE541E95B5B200220EDE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF71BE521E95B5B200220EDE /* LaunchScreen.storyboard */; };
 		FF71BE5D1E95BD4600220EDE /* TweetTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF71BE5C1E95BD4600220EDE /* TweetTableViewController.swift */; };
-		FF71BE5F1E95BDF000220EDE /* Tweet.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF71BE5E1E95BDF000220EDE /* Tweet.swift */; };
+		FFFB888C1E972AD600663188 /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFFB888B1E972AD600663188 /* Twitter.framework */; };
+		FFFB888D1E972AD600663188 /* Twitter.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FFFB888B1E972AD600663188 /* Twitter.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FFFB888E1E972AD600663188 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				FFFB888D1E972AD600663188 /* Twitter.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		FF71BE431E95B5B200220EDE /* SmartTag.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartTag.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -25,7 +40,7 @@
 		FF71BE531E95B5B200220EDE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FF71BE551E95B5B200220EDE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FF71BE5C1E95BD4600220EDE /* TweetTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TweetTableViewController.swift; sourceTree = "<group>"; };
-		FF71BE5E1E95BDF000220EDE /* Tweet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tweet.swift; sourceTree = "<group>"; };
+		FFFB888B1E972AD600663188 /* Twitter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Twitter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FFFB888C1E972AD600663188 /* Twitter.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +58,7 @@
 		FF71BE3A1E95B5B200220EDE = {
 			isa = PBXGroup;
 			children = (
+				FFFB888B1E972AD600663188 /* Twitter.framework */,
 				FF71BE451E95B5B200220EDE /* SmartTag */,
 				FF71BE441E95B5B200220EDE /* Products */,
 			);
@@ -60,7 +77,6 @@
 			children = (
 				FF71BE4A1E95B5B200220EDE /* Main.storyboard */,
 				FF71BE5C1E95BD4600220EDE /* TweetTableViewController.swift */,
-				FF71BE5E1E95BDF000220EDE /* Tweet.swift */,
 				FF71BE5B1E95BCF900220EDE /* Supporting File */,
 			);
 			path = SmartTag;
@@ -88,6 +104,7 @@
 				FF71BE3F1E95B5B200220EDE /* Sources */,
 				FF71BE401E95B5B200220EDE /* Frameworks */,
 				FF71BE411E95B5B200220EDE /* Resources */,
+				FFFB888E1E972AD600663188 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -154,7 +171,6 @@
 				FF71BE5D1E95BD4600220EDE /* TweetTableViewController.swift in Sources */,
 				FF71BE471E95B5B200220EDE /* AppDelegate.swift in Sources */,
 				FF71BE4F1E95B5B200220EDE /* SmartTag.xcdatamodeld in Sources */,
-				FF71BE5F1E95BDF000220EDE /* Tweet.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -318,6 +334,7 @@
 				FF71BE5A1E95B5B200220EDE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

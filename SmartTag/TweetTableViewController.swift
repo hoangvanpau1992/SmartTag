@@ -7,9 +7,10 @@
 //
 
 import UIKit
+import Twitter
 
 class TweetTableViewController: UITableViewController {
-    var tweets: [Array<Tweet>] = [] {
+    var tweets: [Array<Twitter.Tweet>] = [] {
         didSet {
             tableView.reloadData()
         }
@@ -23,19 +24,36 @@ class TweetTableViewController: UITableViewController {
         }
     }
     
+    private var twitterRequest : Twitter.Request? {
+        if let query = searchText, !query.isEmpty {
+            return Twitter.Request(search: query, count: 100)
+        }
+        return nil
+    }
+    
+    private var lastTwitterRequest: Twitter.Request?
+    
     private func searchForTweets() {
-        
+        if let request = twitterRequest {
+            request.fetchTweets({[unowned self] (newTweets) in
+                DispatchQueue.main.async {
+                    guard let request = lastTwitterRequest else {
+                        return
+                    }
+                    guard !newTweets.isEmpty else {
+                        return
+                    }
+                    tweets.insert(newTweets, at: 0)
+                }
+            })
+        }
     }
     
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+       searchText = "#standford"
     }
 
     override func didReceiveMemoryWarning() {
@@ -47,12 +65,12 @@ class TweetTableViewController: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return tweets.count
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return tweets[section].count
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
