@@ -30,7 +30,7 @@ class TweetTableViewCell: UITableViewCell {
         }
         if let create = tweet?.created {
             let dateFormatter = DateFormatter()
-            dateFormatter.locale = Locale(identifier: "VI")
+            dateFormatter.locale = Locale(identifier: "Vi")
             if Date().timeIntervalSince(create) > 24 * 60 * 60 {
                 dateFormatter.dateStyle = .short
             } else {
