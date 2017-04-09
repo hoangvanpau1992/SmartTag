@@ -20,6 +20,7 @@ class TweetTableViewController: UITableViewController {
         didSet {
             searchTextField?.text = searchText
             searchTextField?.resignFirstResponder()
+            lastTwitterRequest = nil                // REFRESHING
             tweets.removeAll()
             searchForTweets()
             title = searchText
@@ -36,25 +37,25 @@ class TweetTableViewController: UITableViewController {
     private var lastTwitterRequest: Twitter.Request?
     
     private func searchForTweets() {
-        if let request = twitterRequest {
+        if let request = lastTwitterRequest?.newer ?? twitterRequest {
             lastTwitterRequest = request
             request.fetchTweets{[unowned self] newTweets in
                 DispatchQueue.main.async {
-                    guard request == self.lastTwitterRequest else {
+                    guard request == self.lastTwitterRequest, !newTweets.isEmpty else {
+                        self.refreshControl?.endRefreshing()
                         return
                     }
-                    guard !newTweets.isEmpty else {
-                        return
-                    }
+                   
                     self.tweets.insert(newTweets, at: 0)
-                    if self.tweets.count == 1 {
-                        self.tableView.reloadData()
-                    } else {
-                        self.tableView.insertSections([0], with: .fade)
-                    }
+                    self.refreshControl?.endRefreshing()
+                    self.tableView.reloadData()
                 }
             }
         }
+    }
+    
+    @IBAction func refresh(_ sender: UIRefreshControl) {
+        searchForTweets()
     }
     
 
