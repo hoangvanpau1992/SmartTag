@@ -34,6 +34,11 @@ class TweetTableViewController: UITableViewController {
         return nil
     }
     
+    func insertTweets(_ newTweets: [Twitter.Tweet]) {
+        self.tweets.insert(newTweets, at: 0)
+        self.tableView.reloadData()
+    }
+    
     private var lastTwitterRequest: Twitter.Request?
     
     private func searchForTweets() {
@@ -45,10 +50,8 @@ class TweetTableViewController: UITableViewController {
                         self.refreshControl?.endRefreshing()
                         return
                     }
-                   
-                    self.tweets.insert(newTweets, at: 0)
+                    self.insertTweets(newTweets)
                     self.refreshControl?.endRefreshing()
-                    self.tableView.reloadData()
                 }
             }
         }
