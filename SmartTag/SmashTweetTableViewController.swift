@@ -19,10 +19,13 @@ class SmashTweetTableViewController: TweetTableViewController {
     }
     
     private func updateDatabase(with tweets:[Twitter.Tweet]) {
+        print("starting database load")
         container.performBackgroundTask { context in
             for tweetInfo in tweets {
                 _ = try? Tweet.findOrCreateTweet(matching: tweetInfo, in: context )
             }
+            try? context.save()
+            print("finish database load")
         }
         printDatabaseStatistics()
     }
@@ -34,7 +37,7 @@ class SmashTweetTableViewController: TweetTableViewController {
             print("\(tweetCount) tweet(s)")
         }
         let twitterRequest : NSFetchRequest<TwitterUser> = TwitterUser.fetchRequest()
-        if let twitterCount = (try? AppDelegate.context.fetch(twitterRequest))?.count {
+        if let twitterCount = (try? AppDelegate.context.count(for: twitterRequest)) {
             print("\(twitterCount) tweet(s)")
         }
     }
