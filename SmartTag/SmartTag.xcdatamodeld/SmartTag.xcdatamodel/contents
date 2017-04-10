@@ -4,15 +4,15 @@
         <attribute name="created" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
         <attribute name="text" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="unique" optional="YES" attributeType="String" syncable="YES"/>
-        <relationship name="twetter" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="TwetterUser" inverseName="tweets" inverseEntity="TwetterUser" syncable="YES"/>
+        <relationship name="twitter" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="TwitterUser" inverseName="tweets" inverseEntity="TwitterUser" syncable="YES"/>
     </entity>
-    <entity name="TwetterUser" representedClassName=".TwetterUser" syncable="YES" codeGenerationType="category">
+    <entity name="TwitterUser" representedClassName=".TwitterUser" syncable="YES" codeGenerationType="category">
         <attribute name="handle" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
-        <relationship name="tweets" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Tweet" inverseName="twetter" inverseEntity="Tweet" syncable="YES"/>
+        <relationship name="tweets" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Tweet" inverseName="twitter" inverseEntity="Tweet" syncable="YES"/>
     </entity>
     <elements>
         <element name="Tweet" positionX="160" positionY="248" width="128" height="103"/>
-        <element name="TwetterUser" positionX="-54" positionY="234" width="128" height="88"/>
+        <element name="TwitterUser" positionX="-54" positionY="234" width="128" height="90"/>
     </elements>
 </model>
