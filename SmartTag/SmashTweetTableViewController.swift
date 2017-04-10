@@ -31,20 +31,21 @@ class SmashTweetTableViewController: TweetTableViewController {
     }
     
     private func printDatabaseStatistics() {
-        
-        if Thread.isMainThread {
-            print("on main queue")
-        } else {
-            print("off main queue")
-        }
-        
-        let tweetRequest : NSFetchRequest<Tweet> = Tweet.fetchRequest()
-        if let tweetCount = (try? AppDelegate.context.fetch(tweetRequest))?.count {
-            print("\(tweetCount) tweet(s)")
-        }
-        let twitterRequest : NSFetchRequest<TwitterUser> = TwitterUser.fetchRequest()
-        if let twitterCount = (try? AppDelegate.context.count(for: twitterRequest)) {
-            print("\(twitterCount) tweet(s)")
+        AppDelegate.context.perform {
+            if Thread.isMainThread {
+                print("on main queue")
+            } else {
+                print("off main queue")
+            }
+            
+            let tweetRequest : NSFetchRequest<Tweet> = Tweet.fetchRequest()
+            if let tweetCount = (try? AppDelegate.context.fetch(tweetRequest))?.count {
+                print("\(tweetCount) tweet(s)")
+            }
+            let twitterRequest : NSFetchRequest<TwitterUser> = TwitterUser.fetchRequest()
+            if let twitterCount = (try? AppDelegate.context.count(for: twitterRequest)) {
+                print("\(twitterCount) tweet(s)")
+            }
         }
     }
  
