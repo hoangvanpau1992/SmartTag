@@ -25,12 +25,18 @@ class SmashTweetTableViewController: TweetTableViewController {
                 _ = try? Tweet.findOrCreateTweet(matching: tweetInfo, in: context )
             }
             try? context.save()
+            self.printDatabaseStatistics()
             print("finish database load")
         }
-        printDatabaseStatistics()
     }
     
     private func printDatabaseStatistics() {
+        
+        if Thread.isMainThread {
+            print("on main queue")
+        } else {
+            print("off main queue")
+        }
         
         let tweetRequest : NSFetchRequest<Tweet> = Tweet.fetchRequest()
         if let tweetCount = (try? AppDelegate.context.fetch(tweetRequest))?.count {
